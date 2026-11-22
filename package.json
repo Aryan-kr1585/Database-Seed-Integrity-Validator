@@ -1,0 +1,13 @@
+{
+  "name": "seed-integrity-validator",
+  "version": "0.1.0",
+  "description": "Validate in-memory database seed data, field constraints, uniqueness, and cross-table references.",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": { ".": "./src/index.js" },
+  "files": ["src", "README.md", "LICENSE", "examples"],
+  "engines": { "node": ">=18" },
+  "scripts": { "test": "node --test", "lint": "for file in src/*.js tests/*.js examples/*.js; do node --check \"$file\" || exit 1; done" },
+  "keywords": ["seed", "data-validation", "foreign-key", "database", "integrity", "testing"],
+  "license": "MIT"
+}
